@@ -3,858 +3,864 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content=" Pratik Chavan's Portfolio ">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content=" Pratik Chavan's Portfolio ">
         
-        <meta name="author" content="Pratik Chavan">
+    <meta name="author" content="Pratik Chavan">
 		
-        <title>Pratik Chavan's Portfolio</title>
+    <title>Pratik Chavan's Portfolio</title>
 		
-		<!-- Mobile Specific Meta
-		================================================== -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Mobile Specific Meta
+	================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<!-- Favicon -->
-		<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" /> -->
+	<!-- Favicon -->
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" /> -->
 		
-		<!-- CSS
-		================================================== -->
-		<!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="plugins/themefisher-font/style.css">
-		<!-- bootstrap.min css -->
-        <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
-		<!-- Animate.css -->
-        <link rel="stylesheet" href="plugins/animate-css/animate.css">
-        <!-- Magnific popup css -->
-        <link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
-		<!-- Slick Carousel -->
-        <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
-        <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
-		<!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/style.css">
+	<!-- CSS
+	================================================== -->
+	<!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="plugins/themefisher-font/style.css">
+	<!-- bootstrap.min css -->
+    <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Animate.css -->
+    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+    <!-- Magnific popup css -->
+    <link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
+	<!-- Slick Carousel -->
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+	<!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 
 			
-    </head>
+</head>
 	
-    <body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
-	    <!--
-	    Start Preloader
-	    ==================================== -->
-		<div id="preloader">
-			<div class="preloader">
-				<div class="sk-cube-grid">
-				  <div class="sk-cube sk-cube1"></div>
-				  <div class="sk-cube sk-cube2"></div>
-				  <div class="sk-cube sk-cube3"></div>
-				  <div class="sk-cube sk-cube4"></div>
-				  <div class="sk-cube sk-cube5"></div>
-				  <div class="sk-cube sk-cube6"></div>
-				  <div class="sk-cube sk-cube7"></div>
-				  <div class="sk-cube sk-cube8"></div>
-				  <div class="sk-cube sk-cube9"></div>
-				</div>
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+	
+	Start Preloader
+	====================================
+	<div id="preloader">
+		<div class="preloader">
+			<div class="sk-cube-grid">
+				<div class="sk-cube sk-cube1"></div>
+				<div class="sk-cube sk-cube2"></div>
+				<div class="sk-cube sk-cube3"></div>
+				<div class="sk-cube sk-cube4"></div>
+				<div class="sk-cube sk-cube5"></div>
+				<div class="sk-cube sk-cube6"></div>
+				<div class="sk-cube sk-cube7"></div>
+				<div class="sk-cube sk-cube8"></div>
+				<div class="sk-cube sk-cube9"></div>
 			</div>
-		</div> 
-        <!--
-        End Preloader
-        ==================================== -->
+		</div>
+	</div> 
+	<!--
+	End Preloader
+	==================================== -->
+	<!--
+	Welcome Slider
+	==================================== -->
+	<script>
+		// Get the video
+		var video = document.getElementById("myVideo");
 
- <!--
-Welcome Slider
-==================================== -->
+		// Get the button
+		var btn = document.getElementById("myBtn");
 
-<section class="hero-area">
-	<div class="block">
-		<div class="video-button">
-			<i class="tf-ion-play"></i>
+		// Pause and play the video, and change the button text
+		function myFunction() {
+		if (video.paused) {
+		video.play();
+		btn.innerHTML = "Pause";
+		} else {
+		video.pause();
+		btn.innerHTML = "Play";
+		}
+		}
+	</script>
+
+	<section class="hero-area">
+		<div class="block">
+
+
+
+			<div class="block">
+				<h1>Hello, I am Pratik Chavan</h1>
+				<p> I make video games. </p>
+				<a data-scroll href="#portfolio" class="btn btn-transparent">Projects</a>
+			</div>
+		</div>
+	</section>
+
+
+	<video autoplay muted loop id="myVideo">
+		<source src="images/Particle_Simulation_Render.mp4">
+	</video>
+
+	<!--
+	Fixed Navigation
+	==================================== -->
+	<header id="navigation" class="navbar navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- responsive nav button -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- /responsive nav button -->
+				<!-- logo -->
+				<a class="navbar-brand logo" href="#body">
+					<img src="images/logos/G_LOGO.png" style="width:50px; height:50px;" alt="Website Logo" />
+					<!-- <svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC" stroke-width="3">
+								<ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
+								<path d="M6,7 L33.5,34.5" id="Line-2" stroke-linecap="square"></path>
+								<path d="M21,20 L34,7" id="Line-3" stroke-linecap="square"></path>
+							</g>
+						</g>
+					</svg> -->
+				</a>
+				<!-- /logo -->
+			</div>
+
+			<!-- main nav -->
+			<nav class="collapse navbar-collapse navbar-right" role="Navigation">
+				<ul id="nav" class="nav navbar-nav navigation-menu">
+					<li><a data-scroll href="#body">Home</a></li>
+					<li><a data-scroll href="#about">About</a></li>
+					<li><a data-scroll href="#services">Education</a></li>
+					<li><a data-scroll href="#portfolio">Projects</a></li>
+
+					<li><a data-scroll href="#blog">Blog</a></li>
+					<li><a data-scroll href="#contact-us">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- /main nav -->
 
 		</div>
-		<h1>Hello, I am Pratik Chavan</h1>
-		<p> I make video games. </p>
-        <a data-scroll href="#portfolio" class="btn btn-transparent">Projects</a>
-	</div>
-</section>	
-
- <!-- 
-  Fixed Navigation
-  ==================================== -->
-    <header id="navigation" class="navbar navigation">
-        <div class="container">
-            <div class="navbar-header">
-              <!-- responsive nav button -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- /responsive nav button -->
-    
-                <!-- logo -->
-                <a class="navbar-brand logo" href="#body">
-                     <img src="images/logos/G_LOGO.png" style="width:50px; height:50px;" alt="Website Logo" /> 
-                    <!-- <svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC" stroke-width="3">
-                                <ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
-                                <path d="M6,7 L33.5,34.5" id="Line-2" stroke-linecap="square"></path>
-                                <path d="M21,20 L34,7" id="Line-3" stroke-linecap="square"></path>
-                            </g>
-                        </g>
-                    </svg> -->
-                </a>
-            <!-- /logo -->
-        </div>
-
-        <!-- main nav -->
-        <nav class="collapse navbar-collapse navbar-right" role="Navigation">
-            <ul id="nav" class="nav navbar-nav navigation-menu">
-                <li><a data-scroll href="#body">Home</a></li>
-                <li><a data-scroll href="#about">About</a></li>
-                <li><a data-scroll href="#services">Education</a></li>
-                <li><a data-scroll href="#portfolio">Projects</a></li>
-  
-                <li><a data-scroll href="#blog">Blog</a></li>
-                <li><a data-scroll href="#contact-us">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- /main nav -->
-  
-      </div>
-  </header>
-  <!--
-  End Fixed Navigation
-  ==================================== -->
-
-<!--
+	</header>
+	<!--
+	End Fixed Navigation
+	==================================== -->
+	<!--
 		Start About Section
 		==================================== -->
-		<section class="bg-one about section">
-			<div class="container">
-				<div class="row">
-				
+	<section class="bg-one about section">
+		<div class="container">
+			<div class="row">
+
+				<!-- section title -->
+				<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+					<h2>What <span class="color">I work With</span> </h2>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+				<!-- About item -->
+				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+					<div class="block">
+						<div class="icon-box">
+							<i class="tf-tools"></i>
+						</div>
+						<!-- Express About Yourself -->
+						<div class="content text-center">
+							<h3 class="ddd">Unreal Engine 4</h3>
+							<p>
+								Unreal Engine 4 is a suite of integrated tools for game developers
+								to design and build games, simulations, and visualizations.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- End About item -->
+				<!-- About item -->
+				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+					<div class="block">
+						<div class="icon-box">
+							<i class="tf-strategy"></i>
+						</div>
+						<!-- Express About Yourself -->
+						<div class="content text-center">
+							<h3>C++</h3>
+							<p>C++ is a general-purpose, cross-platform language that can be used to create high-performance applications.</p>
+						</div>
+					</div>
+				</div>
+				<!-- End About item -->
+				<!-- About item -->
+				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+					<div class="block kill-margin-bottom">
+						<div class="icon-box">
+							<i class="tf-anchor2"></i>
+						</div>
+						<!-- Express About Yourself -->
+						<div class="content text-center">
+							<h3>OpenGL</h3>
+							<p>
+								OpenGL is a
+								cross-platform API for rendering graphics
+								and is used to interact with a
+								GPU to achieve hardware-accelerated rendering.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- End About item -->
+
+			</div> 		<!-- End row -->
+		</div>   	<!-- End container -->
+	</section>   <!-- End section -->
+
+	<section class="section about-2 padding-0 bg-dark" id="about">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 padding-0 ">
+					<img class="img-responsive" src="images/about/C.jpg" style="width:1300px; height:500px;" alt="">
+				</div>
+				<div class="col-md-6">
+					<div class="content-block">
+						<h2>What I Do</h2>
+						<p>
+							As of Dec'19,
+							</p><p>
+							I'm a game programmer working as a C++ programmer at Epoch Games. <br />
+						</p>
+						<p>
+							With 0.5 years of professional game industry experience,
+							in the AA industry, I am currently working on 'The Lays of Althas: Sundered Order' and learning OpenGL.
+						</p>
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="media">
+									<div class="pull-left">
+										<i class="tf-circle-compass"></i>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">Design</h4>
+										<p>
+											I thrive in creative and collaborative environments where hard work and passion for making great games is valued,
+											and where I can leverage my strong technical background to enhance my designs and team.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="media">
+									<div class="pull-left">
+										<i class="tf-hotairballoon"></i>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">Programming</h4>
+										<p>
+											Possesses technical knowledge of Gameplay Programming,
+											AI programming, UE4, C++, VR app development and has exposed to work with
+											Oculus, Windows, SDL, OpenGL API.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+	Start Call To Action
+	==================================== -->
+	<section class="call-to-action section-sm bg-1 overly">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>passionate and hardly working</h2>
+					<p>  <br> 😬😔</p>
+					<a href="#contact-us" class="btn btn-main">Start a project with Me</a>
+				</div>
+			</div> 		<!-- End row -->
+		</div>   	<!-- End container -->
+	</section>   <!-- End section -->
+	<!-- Start Services Section
+	==================================== -->
+
+	<section id="services" class="bg-one section">
+		<div class="container">
+			<div class="row">
+
+				<!-- section title -->
+				<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+					<h2> <span class="color">Education</span></h2>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+				<!-- Single Service Item -->
+				<article class="col-md-4 col-csm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
+					<div class="service-block text-center">
+						<div class="service-icon text-center">
+							<i class="tf-globe"></i>
+						</div>
+						<a href="http://bvuadit.com/bvuditm/bsc-animation-gaming.php" target="_blank">
+							<h3>Bharati Vidyapeeth DITM  2016-19</h3>
+						</a>
+						<p>Graduated in BSc in Animation and Gaming in 2019 with GPA 7.44 </p>
+						<a href="http://bvuadit.com/bvuditm/syllabus-bsc-ag.php" target="_blank" >
+						<p>Module Info </p></a>
+					</div>
+				</article>
+				<!-- End Single Service Item -->
+				<!-- Single Service Item -->
+				<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+					<div class="service-block text-center">
+						<div class="service-icon text-center">
+							<i class="tf-ion-laptop"></i>
+						</div>
+						<h3>MS</h3>
+						<p>----<br />---<br />--</p>
+						<p>-<br /></p>
+
+					</div>
+				</article>
+				<!-- End Single Service Item -->
+				<!-- Single Service Item -->
+				<!-- <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+					<div class="service-block text-center">
+						<div class="service-icon text-center">
+							<i class="tf-genius"></i>
+						</div>
+						<h3>Media &amp; Advertisement</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+					</div>
+				</article> -->
+				<!-- End Single Service Item -->
+				<!-- Single Service Item -->
+				<!-- <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+					<div class="service-block text-center">
+						<div class="service-icon text-center">
+							<i class="tf-dial"></i>
+						</div>
+						<h3>Graphic Design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+					</div>
+				</article> -->
+				<!-- End Single Service Item -->
+				<!-- Single Service Item -->
+				<!-- <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+					<div class="service-block text-center">
+						<div class="service-icon text-center">
+							<i class="tf-target3"></i>
+						</div>
+						<h3>Apps Development</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+					</div>
+				</article> -->
+				<!-- End Single Service Item -->
+				<!-- Single Service Item -->
+				<!-- <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+					<div class="service-block text-center kill-margin-bottom">
+						<div class="service-icon text-center">
+							<i class="tf-lifesaver"></i>
+						</div>
+						<h3>Networking</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
+					</div>
+				</article> -->
+				<!-- End Single Service Item -->
+
+			</div> 		<!-- End row -->
+		</div>   	<!-- End container -->
+	</section>   <!-- End section -->
+	<!-- Start Team Skills
+		=========================================== -->
+
+	<section id="team-skills" class="parallax-section section section-bg overly">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-md-12">
+					<div class="title text-center">
+						<h2> <span class="color">Skills</span></h2>
+						<div class="border"></div>
+					</div>
+				</div>
+				<!-- /section title -->
+			</div>  		<!-- End row -->
+			<div class="row">
+				<div class="col-md-6">
+					<h2>
+						I'm skilled in wide range of <br>Game Development and
+						Other development support tools.
+					</h2>
+					<p></p>
+					<img class="img-responsive" src="images/about/company-growth.png" alt="">
+				</div>
+				<div class="col-md-6">
+					<ul class="skill-bar">
+						<li>
+							<p><span>01-</span> Unreal Engine 4</p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70"
+									 aria-valuemin="0" aria-valuemax="100" style="width:75%">
+								</div>
+							</div>
+						</li>
+						<li>
+							<p><span>02-</span> C++</p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70"
+									 aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								</div>
+							</div>
+						</li>
+						<li>
+							<p><span>03-</span> Git/ Source Tree</p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70"
+									 aria-valuemin="0" aria-valuemax="100" style="width:60%">
+								</div>
+							</div>
+						</li>
+						<li>
+							<p><span>04-</span> SDL/ OpenGL</p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70"
+									 aria-valuemin="0" aria-valuemax="100" style="width:50%">
+								</div>
+							</div>
+						</li>
+						<li>
+							<p><span>05-</span> UE4 Blueprints </p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70"
+									 aria-valuemin="0" aria-valuemax="100" style="width:85%">
+								</div>
+							</div>
+						</li>
+						<li>
+							<p><span>05-</span> Rocket League </p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70"
+									 aria-valuemin="0" aria-valuemax="100" style="width:85%">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>   	<!-- End container -->
+	</section>   <!-- End section -->
+	<!-- Start Portfolio Section
+		=========================================== -->
+
+	<section class="portfolio section" id="portfolio">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-12">
+
 					<!-- section title -->
-					<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
-						<h2>What <span class="color">I work With</span> </h2>
+					<div class="title text-center">
+						<h2>My <span class="color">Work</span></h2>
 						<div class="border"></div>
 					</div>
 					<!-- /section title -->
-					
-					<!-- About item -->
-					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >
-						<div class="block">							
-							<div class="icon-box">
-								<i class="tf-tools"></i>
-							</div>					
-							<!-- Express About Yourself -->
-							<div class="content text-center">
-								<h3 class="ddd">Unreal Engine 4</h3>								
-                                <p>Unreal Engine 4 is a suite of integrated tools for game developers 
-                                to design and build games, simulations, and visualizations.</p>
-							</div>
-						</div>
-					</div> 
-					<!-- End About item -->
-					
-					<!-- About item -->
-					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
-						<div class="block">
-							<div class="icon-box">
-								<i class="tf-strategy"></i>
-							</div>
-							<!-- Express About Yourself -->
-							<div class="content text-center">
-								<h3>C++</h3>
-                                <p>C++ is a general-purpose, cross-platform language that can be used to create high-performance applications.</p>
-							</div>
-						</div>
-					</div> 
-					<!-- End About item -->
-					
-					<!-- About item -->					
-					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-						<div class="block kill-margin-bottom">
-							<div class="icon-box">
-								<i class="tf-anchor2"></i>
-							</div>
-							<!-- Express About Yourself -->
-							<div class="content text-center">
-								<h3>OpenGL</h3>
-                                <p> OpenGL is a 
-                                cross-platform API for rendering graphics 
-                                and is used to interact with a  
-                                GPU to achieve hardware-accelerated rendering.</p>
-							</div>
-						</div>
-					</div> 
-					<!-- End About item -->
-					
-				</div> 		<!-- End row -->
-			</div>   	<!-- End container -->
-		</section>   <!-- End section -->
-
-<section class="section about-2 padding-0 bg-dark" id="about">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6 padding-0 ">
-				<img class="img-responsive" src="images/about/C.jpg" style="width:1300px; height:500px;" alt="">
-			</div>
-			<div class="col-md-6">
-                <div class="content-block">
-                    <h2>I make video games</h2>
-                    <p>
-                        As of Dec'19,
-
-                        I'm a game programmer working as a C++ programmer at Epoch Games. <br />
-                    </p>
-                    <p>
-                        With 0.5 years of professional game industry experience,
-                        in the AA industry, I am currently working on 'The Lays of Althas: Sundered Order' and learning OpenGL.
-                    </p>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="media">
-                                <div class="pull-left">
-                                    <i class="tf-circle-compass"></i>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Design</h4>
-                                    <p>
-                                        I thrive in creative and collaborative environments where hard work and passion for making great games is valued,
-                                        and where I can leverage my strong technical background to enhance my designs and team.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="media">
-                                <div class="pull-left">
-                                    <i class="tf-hotairballoon"></i>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Programming</h4>
-                                    <p>
-                                        Possesses technical knowledge of Gameplay Programming,
-                                        AI programming, UE4, C++, VR app development and has exposed to work with
-                                        Oculus, Windows, SDL, OpenGL API.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!--
-Start Call To Action
-==================================== -->
-<section class="call-to-action section-sm bg-1 overly">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<h2>passionate and hardly working</h2>
-				<p> if you didn't  laugh at that <br> 😬😔</p>
-				<a href="#contact-us" class="btn btn-main">Start a project with Me</a>
-			</div>
-		</div> 		<!-- End row -->
-	</div>   	<!-- End container -->
-</section>   <!-- End section -->
-
-<!-- Start Services Section
-==================================== -->
-
-<section id="services" class="bg-one section">
-	<div class="container">
-		<div class="row">
-			
-			<!-- section title -->
-			<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-				<h2> <span class="color">Education</span></h2>
-				<div class="border"></div>
-			</div>
-			<!-- /section title -->
-			
-            <!-- Single Service Item -->
-			<article class="col-md-4 col-csm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms">
-				<div class="service-block text-center">
-					<div class="service-icon text-center">
-						<i class="tf-globe"></i>
-					</div>
-					<h3>Bharati Vidyapeeth DITM  2016-19</h3>
-					<p>Graduated in BSc in Animation and Gaming in 2019 with gpa 7.44 </p>
-				</div>
-			</article>
-            <!-- End Single Service Item -->
-            
-            <!-- Single Service Item -->
-			<article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-				<div class="service-block text-center">
-					<div class="service-icon text-center">
-						<i class="tf-ion-laptop"></i>
-					</div>
-					<h3>Coming soon...</h3>
-					<p>---<br />--<br />-</p>
-				</div>
-			</article>
-            <!-- End Single Service Item -->
-            
-            <!-- Single Service Item -->
-			<!-- <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-				<div class="service-block text-center">
-					<div class="service-icon text-center">
-						<i class="tf-genius"></i>
-					</div>
-					<h3>Media &amp; Advertisement</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-				</div>
-			</article> -->
-			<!-- End Single Service Item -->
-			
-			<!-- Single Service Item -->
-			<!-- <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
-				<div class="service-block text-center">
-					<div class="service-icon text-center">
-						<i class="tf-dial"></i>
-					</div>
-					<h3>Graphic Design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-				</div>
-			</article> -->
-			<!-- End Single Service Item -->
-			
-			<!-- Single Service Item -->
-			<!-- <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
-				<div class="service-block text-center">
-					<div class="service-icon text-center">
-						<i class="tf-target3"></i>
-					</div>
-					<h3>Apps Development</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-				</div>
-			</article> -->
-			<!-- End Single Service Item -->
-			
-			<!-- Single Service Item -->
-			<!-- <article class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-				<div class="service-block text-center kill-margin-bottom">
-					<div class="service-icon text-center">
-						<i class="tf-lifesaver"></i>
-					</div>
-					<h3>Networking</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-				</div>
-			</article> -->
-			<!-- End Single Service Item -->
-				
-		</div> 		<!-- End row -->
-	</div>   	<!-- End container -->
-</section>   <!-- End section -->
-	
-
-<!-- Start Team Skills
-		=========================================== -->
-		
-		<section id="team-skills" class="parallax-section section section-bg overly">
-			<div class="container">
-				<div class="row" >
-					<!-- section title -->
-					<div class="col-md-12">
-						<div class="title text-center">
-							<h2> <span class="color">Skills</span></h2>
-							<div class="border"></div>
-						</div>
-					</div>
-					<!-- /section title -->
-				</div>  		<!-- End row -->
-				<div class="row">
-					<div class="col-md-6">
-						<h2>I'm skilled in wide range of <br>Game Development and 
-							Other development support tools.</h2>
-							<p></p>
-							<img class="img-responsive" src="images/about/company-growth.png" alt="">
-					</div>
-					<div class="col-md-6">
-                        <ul class="skill-bar">
-                            <li>
-                                <p><span>01-</span> Unreal Engine 4</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <p><span>02-</span> C++</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <p><span>03-</span> Git/ Source Tree</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <p><span>04-</span> SDL/ OpenGL</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <p><span>05-</span> UE4 Blueprints </p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <p><span>05-</span> Rocket League </p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+				</div> <!-- /end col-lg-12 -->
+			</div> <!-- end row -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="portfolio-filter">
+						<button type="button" data-filter="all">All</button>
+						<button type="button" data-filter=".photography">Unreal Engine</button>
+						<button type="button" data-filter=".design"> C++ </button>
+						<button type="button" data-filter=".development"> VR </button>
 					</div>
 				</div>
-			</div>   	<!-- End container -->
-		</section>   <!-- End section -->
-
-<!-- Start Portfolio Section
-		=========================================== -->
-		
-		<section class="portfolio section" id="portfolio">
-			<div class="container">
-				<div class="row " >
-					<div class="col-lg-12">
-					
-						<!-- section title -->
-						<div class="title text-center">
-							<h2>My <span class="color">Work</span></h2>
-							<div class="border"></div>
-						</div>
-						<!-- /section title -->
-					</div> <!-- /end col-lg-12 -->
-				</div> <!-- end row -->
-				<div class="row">
-						<div class="col-md-12">
-                            <div class="portfolio-filter">
-                                <button type="button" data-filter="all">All</button>
-                                <button type="button" data-filter=".photography">Unreal Engine</button>
-                                <button type="button" data-filter=".design"> C++ </button>
-                                <button type="button" data-filter=".development"> VR </button>
-                            </div>
-						</div>
-					</div>
-                <div class="row portfolio-items-wrapper" >
-                    <div class="mix col-md-4 design">
-                        <div class="portfolio-block" >
-                            <img class="img-responsive" src="images/portfolio/portfolio-1.jpg" alt="">
-                            <div class="caption">
-
-                                <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">
-                                    <i class="tf-ion-android-search"></i>
-                                </a>
-                                <h4><a>C++ lambda expression</a></h4>
-                                <p>
-                                    Allows us write an inline function:
-                                    used for short snippets of code that are not going to be reused and not worth naming.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mix col-md-4 design photography" >
-                        <div class="portfolio-block">
-                            <img class="img-responsive" src="images/portfolio/epoch.png" alt="">
-                            <div class="caption">
-                                <h4>
-                                    <a href="https://www.indiedb.com/games/the-lays-of-althas-sundered-order/images/voshellas-landscape" target="_blank">
-                                        Lays of Althas: Sundered Order
-                                    </a>
-                                </h4>
-                                <p>Working as a C++ game programmer</p>
-                                <p> Project Owner: Epoch Games</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mix col-md-4 photography" style="width:800px; height:500px">
-                        <div class="portfolio-block">
-                            <img class="img-responsive" src="images/portfolio/grapple.jpg" alt="">
-
-                            <div class="caption">
-                                <iframe src="https://blueprintue.com/render/wzi5hwql" scrolling="no" allowfullscreen width="550" height="250"></iframe>
-
-                                <h4><a>UE4 Grapple</a></h4>
-                                <p>Grapple implementation in blueprints</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mix col-md-4 design">
-                        <div class="portfolio-block">
-                            <img class="img-responsive" src="images/portfolio/function.PNG" alt="">
-                            <div class="caption">
-                                <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/function.PNG" data-lightbox="image-1">
-                                    <i class="tf-ion-android-search"></i>
-                                </a>
-                                <h4><a>Function *</a></h4>
-                                <p>Passing a function as a parameter to the other function</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mix col-md-4 photography development">
-                        <div class="portfolio-block">
-                            <img class="img-responsive" src="images/portfolio/ArchViz.png" alt="">
-                            <div class="caption">
-                                <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/ArchViz.png" data-lightbox="image-1">
-                                    <i class="tf-ion-android-search"></i>
-                                </a>
-                                <h4><a>Architectural visualisation</a></h4>
-                                <p> Build for Oculus/ Windows</p><p> Owner: Innobytes Tech. pvt. ltd.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mix col-md-4 photography development" style="width:700px; Height:470px">
-                        <div class="portfolio-block">
-                            <img class="img-responsive" src="images/portfolio/ArchViz2.png" alt="">
-                            <div class="caption">
-                                <iframe width="600" height="315" src="https://www.youtube.com/embed/Bvi4CPLc1tw"
-                                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-                                                picture-in-picture" allowfullscreen></iframe>
-
-                                </a>
-                                <h4><a>Architectural visualisation</a></h4>
-                                <p> Owner: Innobytes Tech. pvt. ltd.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mix col-md-4 photography" style="width:800px; height:600px">
-                        <div class="portfolio-block">
-                            <iframe width="800" height="600" src="https://www.youtube.com/embed/3P5B_KbHzUk"
-                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="caption" style="width:400px; height:300px">
-                                <iframe src="https://blueprintue.com/render/men6yt_j" scrolling="no" allowfullscreen width="400" height="300"></iframe>
-                                <h4><a href="">Movement restricted to Splines </a></h4>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mix col-md-4 photography" style="width:710px; height:510px">
-                        <div class="portfolio-block">
-                            <img class="img-responsive" src="images/portfolio/Felix.jpg" alt="">
-                            <div class="caption">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/xr5-MWIli2I" frameborder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <h4><a>Wake Up Felix!</a></h4>
-                                <p>Mostly coded with blueprints by ppchavan001</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mix col-md-4  photography development" style="width:700px; height:400px">
-                        <div class="portfolio-block">
-                            <img class="img-responsive" src="images/portfolio/oculus.jpg" alt="">
-                            <div class="caption">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/etYVJwCRWPA" frameborder="0" allow="accelerometer;
-                                            autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </a>
-                                <h4><a href="">VR archviz</a></h4>
-                                <p> Owner: Innobytes Tech. pvt. ltd.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mix col-md-4 design ">
-                        <div class="portfolio-block">
-                            <img class="img-responsive" src="images/portfolio/struct.PNG" alt="">
-                            <div class="caption">
-                                <a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/struct.PNG" data-lightbox="image-1">
-                                    <i class="tf-ion-android-search"></i>
-                                </a>
-                                <h4><a href="">Struct with constructor</a></h4>
-                                <p> Struct with constructor and overloaded == operator</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-						
-
-						
-			</div>	<!-- end container -->
-		</section>   <!-- End section -->
-
-<!--
-Start Counter Section
-==================================== -->
-		
-<section id="counter" class="parallax-section bg-1 section overly">
-	<div class="container">
-		<div class="row">
-		
-			<!-- first count item -->
-			<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
-				<div class="counters-item">
-					<i class="tf-ion-android-happy"></i>
-					<span data-speed="3000" data-to="2">2</span>
-					<h3>Happy Clients</h3>
-				</div>
 			</div>
-			<!-- end first count item -->
-		
-			<!-- second count item -->
-			<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
-				<div class="counters-item">
-					<i class="tf-ion-archive"></i>
-					<span data-speed="3000" data-to="2">2</span>
-					<h3>Projects completed</h3>
-				</div>
-			</div>
-			<!-- end second count item -->
-		
-			<!-- third count item -->
-			<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
-				<div class="counters-item">
-					<i class="tf-ion-thumbsup"></i>
-					<span data-speed="2" data-to="95">2</span>
-					<h3>Positive feedback</h3>
-					
-				</div>
-			</div>
-			<!-- end third count item -->
-			
-			<!-- fourth count item -->
-			<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-				<div class="counters-item kill-margin-bottom">
-					<i class="tf-ion-coffee"></i>
-					<span data-speed="3000" data-to="2500">2500</span>
-					<h3>Cups of Coffee</h3>
-				</div>
-			</div>
-			<!-- end fourth count item -->
-			
-		</div> 		<!-- end row -->
-	</div>   	<!-- end container -->
-</section>   <!-- end section -->
+			<div class="row portfolio-items-wrapper">
+				<div class="mix col-md-4 design" style="width:570px; height:324px">
+					<div class="portfolio-block">
+						<img class="img-responsive" src="images/portfolio/portfolio-1.jpg" style="width:560px; height:314px">
+						<div class="caption">
 
-<!--
-Start Blog Section
-=========================================== -->
-		
-<section id="blog" class="section">
-	<div class="container">
-		<div class="row">
-
-			<!-- section title -->
-			<div class="title text-center wow fadeInDown">
-				<h2> Latest <span class="color">Posts</span></h2>
-			<div class="border"></div>
-			</div>
-			<!-- /section title -->
-
-            <div class="clearfix">
-
-                <div id="pixlee_container"></div>
-                <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'9WxkjJbSUf0KyJFN94B-'});Pixlee.addSimpleWidget({widgetId:'23731'});};</script>
-                <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
-
-               
-            </div>
-
-			<div class="all-post text-center">
-				<a class="btn btn-main" href="https://www.instagram.com/ppchavan001/" target="_blank">View All Post</a>
-			</div>
-
-		</div> <!-- end row -->
-	</div> <!-- end container -->
-</section> <!-- end section -->
-		
-
-<!-- Srart Contact Us
-=========================================== -->		
-<section id="contact-us" class="contact-us section-bg">
-	<div class="container">
-		<div class="row">
-			
-			<!-- section title -->
-			<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-				<h2>Get In <span class="color">Touch</span></h2>
-				<div class="border"></div>
-			</div>
-			<!-- /section title -->
-			
-			<!-- Contact Details -->
-			<div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
-				<h3>Contact Details</h3>
-				<p></p>
-                <div class="contact-details">
-                    <div class="con-info clearfix">
-                        <i class="tf-map-pin"></i>
-                        <span> Maharashtra, India</span>
-                    </div>
-
-                    <div class="con-info clearfix">
-                        <i class="tf-ion-ios-telephone-outline"></i>
-                        <span>Phone: +91 898 33 11 ***</span>
-                    </div>
-
-                    <div class="con-info clearfix">
-                        <i class="tf-ion-ios-telephone-outline"></i>
-                        <span>WhatsApp +91 898 33 11 ***</span>
-                    </div>
-
-                    <div class="con-info clearfix">
-                        <i class="tf-ion-ios-email-outline"></i>
-                        <span>Email: ppchavan001@gmail.com</span>
-                    </div>
-                </div>
-			</div>
-			<!-- / End Contact Details -->
-				
-			<!-- Contact Form -->
-			<div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-				<form id="contact-form" method="post" action="sendmail.php" role="form">
-				
-					<div class="form-group">
-						<input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
-					</div>
-					
-					<div class="form-group">
-						<input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
-					</div>
-					
-					<div class="form-group">
-						<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
-					</div>
-					
-					<div class="form-group">
-						<textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>	
-					</div>
-					
-					<div id="mail-success" class="success">
-						Thank you. The Mailman is on His Way :)
-					</div>
-					
-					<div id="mail-fail" class="error">
-						Sorry, don't know what happened. Try later :(
-					</div>
-					
-					<div id="cf-submit">
-						<input type="submit" id="contact-submit" class="btn btn-transparent" value="Coming Soon...">
-					</div>						
-					
-				</form>
-			</div>
-			<!-- ./End Contact Form -->
-		
-		</div> <!-- end row -->
-	</div> <!-- end container -->
-	
-	<!-- Google Map -->
-	<div class="google-map">
-		<div id="map-canvas"></div>
-	</div>	
-	<!-- /Google Map -->
-	
-</section> <!-- end section -->
-	
-
-
-		
-		
-		<!-- end Contact Area
-		========================================== -->
-		
-		<footer id="footer" class="bg-one">
-			<div class="container">
-			    <div class="row wow fadeInUp" data-wow-duration="500ms">
-					<div class="col-lg-12">
-						
-						<!-- Footer Social Links -->
-						<div class="social-icon">
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ppchavan001" target="_blank"><i class="tf-ion-social-facebook"></i></a></li>
-								<li><a href="https://twitter.com/ppchavan001" target="_blank"><i class="tf-ion-social-twitter"></i></a></li>
-								
-								<li><a href="https://www.youtube.com/channel/UCXmMtY6f6A3AeLqQdvCSmmg" target="_blank"><i class="tf-ion-social-youtube"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/ppchavan001/" target="_blank"><i class="tf-ion-social-linkedin"></i></a></li>
-								
-							</ul>
-						</div>
-						<!--/. End Footer Social Links -->
-
-						<!-- copyright -->
-						<div class="copyright text-center">
-                            <a href="index.html">
-                                <!-- <img src="images/logo-meghna.png" alt="Meghna" />  -->
-                                <img src="images/logos/G_LOGO.png" style="width:50px; height:50px;" alt="Website Logo" />
-                                </g>
-                                
-                            </a>
-							<br />
-							
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom" 
+							   href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a>C++ lambda expression</a></h4>
 							<p>
+								Allows us write an inline function:
+								used for short snippets of code that are not going to be reused and not worth naming.
 							</p>
 						</div>
-						<!-- /copyright -->
-						
-					</div> <!-- end col lg 12 -->
-				</div> <!-- end row -->
-			</div> <!-- end container -->
-		</footer> <!-- end footer -->
+					</div>
+				</div>
+				<div class="mix col-md-4 design " style="width:570px; height:324px">
+					<div class="portfolio-block">
+						<img class="img-responsive" src="images/portfolio/render.png" style="width:560px; height:314px">
+						<div class="caption">
+							<iframe width="325" height="170" src="https://www.youtube.com/embed/pnn1rhp7iVQ"
+									frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+									picture-in-picture" allowfullscreen></iframe>
+							<h4><a>Particle Simulator</a></h4>
+							<p> Built in C++ using SDL</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-md-4 design photography" style="width:570px; height:324px" >
+					<div class="portfolio-block">
+						<img class="img-responsive" src="images/portfolio/epoch.png" alt="">
+						<div class="caption">
+							<h4>
+								<a href="https://www.indiedb.com/games/the-lays-of-althas-sundered-order/images/voshellas-landscape" 
+								   target="_blank">
+									Lays of Althas: Sundered Order
+								</a>
+							</h4>
+							<p>Working as a C++ game programmer</p>
+							<p> Project Owner: Epoch Games</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-md-4 photography" style="width:570px; height:324px">
+					<div class="portfolio-block">
+						<img class="img-responsive" src="images/portfolio/grapple.jpg" style="width:560px; height:314px">
 
-		<div id="scroll-up">
-			up
-		</div>
-		
-	    
-		
-		
-		
-		
-		
-		
-		
+						<div class="caption">
+							<iframe src="https://blueprintue.com/render/wzi5hwql" scrolling="no" allowfullscreen
+									width="325" height="170"></iframe>
+
+							<h4><a>UE4 Grapple</a></h4>
+							<p>Grapple implementation in blueprints</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-md-4 design" style="width:570px; height:324px">
+					<div class="portfolio-block">
+						<img class="img-responsive" src="images/portfolio/function.PNG" style="width:560px; height:314px">
+						<div class="caption">
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/function.PNG" 
+							   data-lightbox="image-1" width="325" height="170">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a>Function *</a></h4>
+							<p>Passing a function as a parameter to the other function</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-md-4 photography development" style="width:570px; height:324px">
+					<div class="portfolio-block">
+						<img class="img-responsive" src="images/portfolio/ArchViz.png" style="width:560px; height:314px">
+						<div class="caption">
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="images/portfolio/ArchViz.png" data-lightbox="image-1">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a>Architectural visualisation</a></h4>
+							<p> Build for Oculus/ Windows</p><p> Owner: Innobytes Tech. pvt. ltd.</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-md-4 photography development" style="width:570px; height:324px">
+					<div class="portfolio-block">
+						<img class="img-responsive" src="images/portfolio/ArchViz2.png" style="width:560px; height:314px">
+						<div class="caption">
+							<iframe width="325" height="170" src="https://www.youtube.com/embed/Bvi4CPLc1tw"
+									frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                                            picture-in-picture" allowfullscreen></iframe>
+
+							</a>
+							<h4><a>Architectural visualisation</a></h4>
+							<p> Owner: Innobytes Tech. pvt. ltd.</p>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-md-4 photography" style="width:570px; height:324px">
+					<div class="portfolio-block">
+						<iframe style="width:560px; height:314px" src="https://www.youtube.com/embed/3P5B_KbHzUk"
+								frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="caption">
+							<iframe src="https://blueprintue.com/render/men6yt_j" scrolling="no" allowfullscreen
+									width="325" height="170"></iframe>
+							<h4><a >Movement restricted to Splines </a></h4>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="mix col-md-4 photography" style="width:570px; height:324px">
+					<div class="portfolio-block">
+						<img class="img-responsive" src="images/portfolio/Felix.jpg" style="width:560px; height:314px">
+						<div class="caption">
+							<iframe width="325" height="170" src="https://www.youtube.com/embed/xr5-MWIli2I" frameborder="0"
+									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<h4><a>Wake Up Felix!</a></h4>
+							<p>I ,mostly, coded it in blueprints by myself.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mix col-md-4  photography development" style="width:570px; height:324px">
+					<div class="portfolio-block">
+						<img class="img-responsive" src="images/portfolio/oculus.jpg" style="width:560px; height:314px">
+						<div class="caption">
+							<iframe width="325" height="170" src="https://www.youtube.com/embed/etYVJwCRWPA" frameborder="0" allow="accelerometer;
+                                        autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</a>
+							<h4><a >VR archviz</a></h4>
+							<p> Owner: Innobytes Tech. pvt. ltd.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
 
 
-		<!-- 
-		Essential Scripts
-		=====================================-->
-		
-		<!-- Main jQuery -->
-		<script type="text/javascript" src="plugins/jquery/dist/jquery.min.js"></script>
-		<!-- Bootstrap 3.1 -->
-		<script type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-		<!-- Slick Carousel -->
-		<script type="text/javascript" src="plugins/slick-carousel/slick/slick.min.js"></script>
-		<!-- Portfolio Filtering -->
-		<script type="text/javascript" src="plugins/mixitup/dist/mixitup.min.js"></script>
-		<!-- Smooth Scroll -->
-		<script type="text/javascript" src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-		<!-- Magnific popup -->
-		<script type="text/javascript" src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-		<!-- Google Map API -->
-		<script type="text/javascript"  src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<!-- Sticky Nav -->
-		<script type="text/javascript" src="plugins/Sticky/jquery.sticky.js"></script>
-		<!-- Number Counter Script -->
-		<script type="text/javascript" src="plugins/count-to/jquery.countTo.js"></script>
-		<!-- wow.min Script -->
-		<script type="text/javascript" src="plugins/wow/dist/wow.min.js"></script>
-		<!-- Custom js -->
-		<script type="text/javascript" src="js/script.js"></script>
-		
-    </body>
+
+		</div>	<!-- end container -->
+	</section>   <!-- End section -->
+	<!--
+	Start Counter Section
+	==================================== -->
+
+	<section id="counter" class="parallax-section bg-1 section overly">
+		<div class="container">
+			<div class="row">
+
+				<!-- first count item -->
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
+					<div class="counters-item">
+						<i class="tf-ion-android-happy"></i>
+						<span data-speed="3000" data-to="2">2</span>
+						<h3>Happy Clients</h3>
+					</div>
+				</div>
+				<!-- end first count item -->
+				<!-- second count item -->
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
+					<div class="counters-item">
+						<i class="tf-ion-archive"></i>
+						<span data-speed="3000" data-to="2">2</span>
+						<h3>Projects completed</h3>
+					</div>
+				</div>
+				<!-- end second count item -->
+				<!-- third count item -->
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="400ms">
+					<div class="counters-item">
+						<i class="tf-ion-thumbsup"></i>
+						<span data-speed="2" data-to="95">2</span>
+						<h3>Positive feedback</h3>
+
+					</div>
+				</div>
+				<!-- end third count item -->
+				<!-- fourth count item -->
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+					<div class="counters-item kill-margin-bottom">
+						<i class="tf-ion-coffee"></i>
+						<span data-speed="2" data-to="3000">3000</span>
+						<h3>Cups of Coffee</h3>
+					</div>
+				</div>
+				<!-- end fourth count item -->
+
+			</div> 		<!-- end row -->
+		</div>   	<!-- end container -->
+	</section>   <!-- end section -->
+	<!--
+	Start Blog Section
+	=========================================== -->
+
+	<section id="blog" class="section">
+		<div class="container">
+			<div class="row">
+
+				<!-- section title -->
+				<div class="title text-center wow fadeInDown">
+					<h2> Latest <span class="color">Posts</span></h2>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+				
+				<div class="clearfix">
+
+					<div id="pixlee_container"></div>
+					<script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'9WxkjJbSUf0KyJFN94B-'});Pixlee.addSimpleWidget({widgetId:'23731'});};</script>
+					<script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+
+
+				</div>
+				
+				<div class="all-post text-center">
+					<a class="btn btn-main" href="https://www.instagram.com/ppchavan001/" target="_blank">View All Post</a>
+				</div>
+
+			</div> <!-- end row -->
+		</div> <!-- end container -->
+	</section> <!-- end section -->
+	<!-- Srart Contact Us
+	=========================================== -->
+	<section id="contact-us" class="contact-us section-bg">
+		<div class="container">
+			<div class="row">
+
+				<!-- section title -->
+				<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+					<h2>Get In <span class="color">Touch</span></h2>
+					<div class="border"></div>
+				</div>
+				<!-- /section title -->
+				<!-- Contact Details -->
+				<div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+					<h3>Contact Details</h3>
+					<p></p>
+					<div class="contact-details">
+						<div class="con-info clearfix">
+							<i class="tf-map-pin"></i>
+							<span> Maharashtra, India</span>
+						</div>
+
+						<div class="con-info clearfix">
+							<i class="tf-ion-ios-telephone-outline"></i>
+							<span>Phone: +91 898 33 11 ***</span>
+						</div>
+
+						<div class="con-info clearfix">
+							<i class="tf-ion-ios-telephone-outline"></i>
+							<span>WhatsApp +91 898 33 11 ***</span>
+						</div>
+
+						<div class="con-info clearfix">
+							<i class="tf-ion-ios-email-outline"></i>
+							<span>Email: ppchavan001@gmail.com</span>
+						</div>
+					</div>
+				</div>
+				<!-- / End Contact Details -->
+				<!-- Contact Form -->
+				<div class="contact-form col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+					<form id="contact-form" method="post" action="sendmail.php" role="form">
+
+						<div class="form-group">
+							<input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+						</div>
+
+						<div class="form-group">
+							<input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+						</div>
+
+						<div class="form-group">
+							<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+						</div>
+
+						<div class="form-group">
+							<textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+						</div>
+
+						<div id="mail-success" class="success">
+							Thank you. The Mailman is on His Way :)
+						</div>
+
+						<div id="mail-fail" class="error">
+							Sorry, don't know what happened. Try later :(
+						</div>
+
+						<div id="cf-submit">
+							<input type="submit" id="contact-submit" class="btn btn-transparent" value="Coming Soon...">
+						</div>
+
+					</form>
+				</div>
+				<!-- ./End Contact Form -->
+
+			</div> <!-- end row -->
+		</div> <!-- end container -->
+
+
+	</section> <!-- end section -->
+	<!-- end Contact Area
+	========================================== -->
+
+	<footer id="footer" class="bg-one">
+		<div class="container">
+			<div class="row wow fadeInUp" data-wow-duration="500ms">
+				<div class="col-lg-12">
+
+					<!-- Footer Social Links -->
+					<div class="social-icon">
+						<ul class="list-inline">
+							<li>FaceBook<a href="https://www.facebook.com/ppchavan001" target="_blank"><i class="tf-ion-social-facebook"></i></a></li>
+							<li>Twitter<a href="https://twitter.com/ppchavan001" target="_blank"><i class="tf-ion-social-twitter"></i></a></li>
+
+							<li>Google<a href="https://www.google.com/search?q=ppchavan001" target="_blank"><i class="tf-ion-social-google-outline"></i></a></li>
+							<li>YouTube<a href="https://www.youtube.com/channel/UCXmMtY6f6A3AeLqQdvCSmmg" target="_blank"><i class="tf-ion-social-youtube"></i></a></li>
+							<li>LinkedIn<a href="https://www.linkedin.com/in/ppchavan001/" target="_blank"><i class="tf-ion-social-linkedin"></i></a></li>
+
+							<li>GitHub<a href="https://github.com/ppchavan001/" target="_blank"><i class="tf-ion-social-dribbble-outline"> </i></a></li>
+						</ul>
+					</div>
+					<!--/. End Footer Social Links -->
+					<!-- copyright -->
+					<div class="copyright text-center">
+						<a href="#body">
+							<!-- <img src="images/logo-meghna.png" alt="Meghna" />  -->
+							<img src="images/logos/G_LOGO.png" style="width:50px; height:50px;" alt="Website Logo" />
+							</g>
+
+						</a>
+						<br />
+
+						<p>
+						</p>
+					</div>
+					<!-- /copyright -->
+
+				</div> <!-- end col lg 12 -->
+			</div> <!-- end row -->
+		</div> <!-- end container -->
+	</footer> <!-- end footer -->
+
+	<div id="scroll-up">
+		up
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!--
+	Essential Scripts
+	=====================================-->
+	<!-- Main jQuery -->
+	<script type="text/javascript" src="plugins/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap 3.1 -->
+	<script type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- Slick Carousel -->
+	<script type="text/javascript" src="plugins/slick-carousel/slick/slick.min.js"></script>
+	<!-- Portfolio Filtering -->
+	<script type="text/javascript" src="plugins/mixitup/dist/mixitup.min.js"></script>
+	<!-- Smooth Scroll -->
+	<script type="text/javascript" src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+	<!-- Magnific popup -->
+	<script type="text/javascript" src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<!-- Google Map API -->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<!-- Sticky Nav -->
+	<script type="text/javascript" src="plugins/Sticky/jquery.sticky.js"></script>
+	<!-- Number Counter Script -->
+	<script type="text/javascript" src="plugins/count-to/jquery.countTo.js"></script>
+	<!-- wow.min Script -->
+	<script type="text/javascript" src="plugins/wow/dist/wow.min.js"></script>
+	<!-- Custom js -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
 </html>
