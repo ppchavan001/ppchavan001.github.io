@@ -18,7 +18,7 @@ html {
 
 
 body {
-  background-color: #353b43;
+  background-color: #353b4300;
   font-family: "Anaheim", sans-serif;
   color: #737f8a;
   -webkit-font-smoothing: antialiased;
@@ -581,19 +581,22 @@ a:focus, a:hover {
 }
 
 .hero-area {
-  background-image: url("../images/slider/hero-area.png");
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    /*background-image: url("../images/slider/hero-area.png");*/
+ 
+    background-color: transparent;
+    
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .hero-area:before {
@@ -992,15 +995,17 @@ a:focus, a:hover {
   Portfolio section
 ==================================================================*/
 .portfolio-filter {
-  margin-bottom: 40px;
-  text-align: center;
+    
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .portfolio-filter button {
+  background-color: #242930;
   border: none;
-  outline: none;
+  outline:double;
   border: 1px solid rgba(236, 239, 241, 0.07);
-  background: transparent;
+
   display: inline-block;
   font-size: 16px;
   padding: 6px 20px;
