@@ -65,6 +65,7 @@ h1.ml8 {
   height: 3em;
   border: 2px dashed white;
   border-radius: 2em;
+  z-index: -2;
 }
 
 .ml8 .circle-dark {
